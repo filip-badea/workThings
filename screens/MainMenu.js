@@ -18,18 +18,9 @@ class Intro extends React.Component {
                         <Button
                             buttonStyle={styles.buttonStyle}
                             color='#FFD600'
-                            title="Artists"
+                            title="About Artist"
                             titleStyle={styles.buttonText}
                             onPress={() => navigate('Artists')}
-                        />
-                    </View>
-                    <View style={styles.buttonView}>
-                        <Button
-                            buttonStyle={styles.buttonStyle}
-                            color='#FFD600'
-                            title="Stages"
-                            titleStyle={styles.buttonText}
-                            onPress={() => navigate('Stages')}
                         />
                     </View>
                     <View style={styles.buttonView}>
@@ -39,15 +30,6 @@ class Intro extends React.Component {
                             titleStyle={styles.buttonText}
                             color='#FFD600'
                             onPress={() => navigate('About')}
-                        />
-                    </View>
-                    <View style={styles.buttonView}>
-                        <Button
-                            buttonStyle={styles.buttonStyle}
-                            color='#FFD600'
-                            title="About Unilever"
-                            titleStyle={styles.buttonText}
-                            onPress={() => navigate('Unilever')}
                         />
                     </View>
                 </View>
@@ -82,8 +64,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffff',
     },
     buttonText: {
-        fontFamily: 'typonil-bold',
-        fontSize: normalize(14),
+        fontFamily: 'TyponilBold',
+        fontSize: normalize(20),
         color: '#212121',
     },
 });
