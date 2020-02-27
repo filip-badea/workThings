@@ -29,6 +29,7 @@ import IHuman from "./screens/IHuman";
 import MainMenu from './screens/MainMenu'
 import HybridSensorium from './screens/HybridSensorium';
 import SacredEgg from './screens/SacredEgg';
+import InsatiableMachines from './screens/InsatiableMachines';
 
 
 const Stack = createStackNavigator();
@@ -56,6 +57,7 @@ class App extends React.Component {
                     <Stack.Screen name="IHuman" component={IHuman} />
                     <Stack.Screen name="SacredEgg" component={SacredEgg} />
                     <Stack.Screen name="HybridSensorium" component={HybridSensorium} />
+                    <Stack.Screen name="InsatiableMachines" component={InsatiableMachines} />
                 </Stack.Navigator>
             </NavigationContainer>
         );

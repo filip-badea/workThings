@@ -1,7 +1,7 @@
 import React from 'react';
-import {StyleSheet, View, Text, Image, ScrollView} from 'react-native';
+import {StyleSheet, View, Text, Image, ScrollView, Linking} from 'react-native';
 import HalucinariumLogoWhite from '../assets/images/HalucinariumIntro.png';
-import {Button} from 'react-native-elements';
+import {Button, SocialIcon } from 'react-native-elements';
 import {Dimensions} from 'react-native';
 
 const {
@@ -49,6 +49,11 @@ class Intro extends React.Component {
                         </Text>
 
                     </View>
+                    <View style={styles.socialView}>
+                        <SocialIcon type='facebook' light onPress={() => Linking.openURL('http://facebook.com')} />
+                        <SocialIcon type='instagram' light onPress={() => Linking.openURL('http://instagram.com')}/>
+                    </View>
+
                 </ScrollView>
 
                 <View style={styles.enterButton}>
@@ -104,6 +109,11 @@ const styles = StyleSheet.create({
         marginTop: 25,
         alignItems: 'center',
     },
+    socialView: {
+        flexDirection: 'row',
+        marginTop: 25,
+        justifyContent: 'center',
+    },
 
     bodyText: {
         width: '90%',
@@ -119,7 +129,7 @@ const styles = StyleSheet.create({
     },
     buttonStyle: {
         backgroundColor: '#fff',
-        height: 70,
+        height: 60,
     },
 
     buttonText: {

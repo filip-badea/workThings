@@ -37,31 +37,16 @@ class Artists extends React.Component {
                     </View>
                     <ScrollView style={styles.artistInfo}>
                         <Text style={styles.textBody}>
-                            The pseudonym of a Romanian experimental artist and
-                            curator. She is the author of immersive and responsive
-                            installations that investigate biological processes and study
-                            the notion of space as living structure. Her organism like
-                            sculptures carry a digital core, use the human body to
-                            function and question the willingness to cede physicality and
-                            biological needs in exchange for digital content. In the
-                            interaction with these hybrid organisms emitting light, one’s
-                            success in controlling them is equivalent to letting oneself
-                            assimilated by them.
+                            SAINT MACHINE is the pseudonym of a Romanian experimental artist, the author of body
+                            responsive installations that investigate biological processes and study the notion of space
+                            as living structure. Her works are organism-like sculptures that carry a digital core, use
+                            the human body to function and question the willingness to cede physicality and biological
+                            needs in exchange for digital content. In the interaction with these hybrid organisms
+                            emitting light, one’s success in controlling them is always equivalent to letting oneself
+                            assimilated by them. Her body responsive installations have been presented in prestigious
+                            media art festival such as Ars Electronica (AT), Athens Digital Arts Festival (GR), MADATAC,
+                            Medialab-Prado (ES), Laval Virtual (FR).
                         </Text>
-
-                        {/*<Text style={styles.textBody}>*/}
-                            {/*The pseudonym of a Romanian experimental artist and*/}
-                            {/*curator. She is the author of immersive and responsive*/}
-                            {/*installations that investigate biological processes and study*/}
-                            {/*the notion of space as living structure. Her organism like*/}
-                            {/*sculptures carry a digital core, use the human body to*/}
-                            {/*function and question the willingness to cede physicality and*/}
-                            {/*biological needs in exchange for digital content. In the*/}
-                            {/*interaction with these hybrid organisms emitting light, one’s*/}
-                            {/*success in controlling them is equivalent to letting oneself*/}
-                            {/*assimilated by them.*/}
-                        {/*</Text>*/}
-
 
                     </ScrollView>
                 </View>

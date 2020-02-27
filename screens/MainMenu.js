@@ -18,6 +18,15 @@ class Intro extends React.Component {
                         <Button
                             buttonStyle={styles.buttonStyle}
                             color='#FFD600'
+                            title="Insatiable Machines"
+                            titleStyle={styles.buttonText}
+                            onPress={() => navigate('InsatiableMachines')}
+                        />
+                    </View>
+                    <View style={styles.buttonView}>
+                        <Button
+                            buttonStyle={styles.buttonStyle}
+                            color='#FFD600'
                             title="I, Human"
                             titleStyle={styles.buttonText}
                             onPress={() => navigate('IHuman')}
@@ -87,7 +96,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
     buttonStyle: {
-        height: 60,
+        height: 50,
         backgroundColor: '#ffff',
     },
     buttonText: {
