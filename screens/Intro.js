@@ -49,10 +49,7 @@ class Intro extends React.Component {
                         </Text>
 
                     </View>
-                    <View style={styles.socialView}>
-                        <SocialIcon type='facebook' light onPress={() => Linking.openURL('http://facebook.com')} />
-                        <SocialIcon type='instagram' light onPress={() => Linking.openURL('http://instagram.com')}/>
-                    </View>
+
 
                 </ScrollView>
 
@@ -109,12 +106,6 @@ const styles = StyleSheet.create({
         marginTop: 25,
         alignItems: 'center',
     },
-    socialView: {
-        flexDirection: 'row',
-        marginTop: 25,
-        justifyContent: 'center',
-    },
-
     bodyText: {
         width: '90%',
         fontFamily: 'AnonymousPro',

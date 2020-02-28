@@ -56,7 +56,7 @@ class Intro extends React.Component {
                             color='#FFD600'
                             title="About Artist"
                             titleStyle={styles.buttonText}
-                            onPress={() => navigate('Artists')}
+                            onPress={() => navigate('Artist')}
                         />
                     </View>
                     <View style={styles.buttonView}>

@@ -1,6 +1,6 @@
 import React from 'react';
-import {StyleSheet, View, Text, ScrollView} from 'react-native';
-import {Icon, Button} from 'react-native-elements';
+import {StyleSheet, View, Text, ScrollView, Linking} from 'react-native';
+import {Icon, Button, SocialIcon} from 'react-native-elements';
 import {normalize} from './Intro';
 
 class About extends React.Component {
@@ -22,6 +22,11 @@ class About extends React.Component {
                     iconLeft
                     onPress={() => navigate('MainMenu')}
                 />
+
+                <View style={styles.socialView}>
+                    <SocialIcon type='facebook' light onPress={() => Linking.openURL('https://www.facebook.com/Halucinarium/')} />
+                    <SocialIcon type='instagram' light onPress={() => Linking.openURL('https://www.instagram.com/halucinarium/')}/>
+                </View>
 
                 <ScrollView>
 
@@ -87,6 +92,11 @@ const styles = StyleSheet.create({
         fontFamily: 'TyponilBold',
         fontSize: normalize(18),
         color: '#212121',
+    },
+    socialView: {
+        flexDirection: 'row',
+        marginTop: 25,
+        justifyContent: 'center',
     },
     textFull: {
         flex: 1,

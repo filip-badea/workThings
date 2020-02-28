@@ -4,7 +4,7 @@ import {Icon, Button} from 'react-native-elements';
 import Machine from '../assets/images/artistpage_saint.png';
 import {normalize} from './Intro';
 
-class Artists extends React.Component {
+class Artist extends React.Component {
 
 
     render() {
@@ -56,7 +56,7 @@ class Artists extends React.Component {
     }
 }
 
-export default Artists;
+export default Artist;
 
 const TITLE_FONT_SIZE = normalize(18);
 const BODY_FONT_SIZE = normalize(16);
