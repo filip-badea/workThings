@@ -9,59 +9,65 @@ class About extends React.Component {
         const {navigate} = this.props.navigation;
         return (
             <View style={styles.root}>
-                <Button
-                    containerStyle={styles.buttonContainer}
-                    buttonStyle={styles.buttonStyle}
-                    title="HALUCINARIUM"
-                    titleStyle={styles.buttonText}
-                    raised
-                    iconContainerStyle={styles.iconStyle}
-                    icon={
-                        <Icon name="keyboard-arrow-left" size={30} color="#212121"/>
-                    }
-                    iconLeft
-                    onPress={() => navigate('MainMenu')}
-                />
+                <View style={styles.backContainer}>
+                    <Button
+                        containerStyle={styles.buttonContainer}
+                        buttonStyle={styles.buttonStyle}
+                        title="HALUCINARIUM"
+                        titleStyle={styles.buttonText}
+                        raised
+                        iconContainerStyle={styles.iconStyle}
+                        icon={
+                            <Icon name="keyboard-arrow-left" size={30} color="#212121"/>
+                        }
+                        iconLeft
+                        onPress={() => navigate('MainMenu')}
+                    />
+                </View>
 
                 <View style={styles.socialView}>
-                    <SocialIcon type='facebook' light onPress={() => Linking.openURL('https://www.facebook.com/Halucinarium/')} />
-                    <SocialIcon type='instagram' light onPress={() => Linking.openURL('https://www.instagram.com/halucinarium/')}/>
+                    <SocialIcon type='facebook' light
+                                onPress={() => Linking.openURL('https://www.facebook.com/Halucinarium/')}/>
+                    <SocialIcon type='instagram' light
+                                onPress={() => Linking.openURL('https://www.instagram.com/halucinarium/')}/>
                 </View>
 
-                <ScrollView>
+                <ScrollView style={styles.text}>
 
-                <View style={styles.textFull}>
-                    <View style={styles.textContainer}>
-                        <Text style={styles.textTitle}>
-                            The Status Quo
-                        </Text>
+                    <View style={styles.textFull}>
+                        <View style={styles.textContainer}>
+                            <Text style={styles.textTitle}>
+                                The Status Quo
+                            </Text>
 
-                        <Text style={styles.textBody}>
-                            Social and environmental issues, together with the appearance of
-                            the pivotal Generation Z, produces a disruption in the modes of
-                            production and consumption, that is, a new way of living.
-                        </Text>
+                            <Text style={styles.textBody}>
+                                Social and environmental issues, together with the appearance of
+                                the pivotal Generation Z, produces a disruption in the modes of
+                                production and consumption, that is, a new way of living.
+                            </Text>
 
-                        <Text style={styles.textTitle}>
-                            Vision
-                        </Text>
+                            <Text style={styles.textTitle}>
+                                Vision
+                            </Text>
 
-                        <Text style={styles.textBody}>
-                            Through art, we communicate that technological innovation adds social value.
-                        </Text>
+                            <Text style={styles.textBody}>
+                                Through art, we communicate that technological innovation adds social value.
+                            </Text>
 
-                        <Text style={styles.textTitle}>
-                            Mission
-                        </Text>
+                            <Text style={styles.textTitle}>
+                                Mission
+                            </Text>
 
-                        <Text style={styles.textBody}>
-                            Via its curation of artists and works, Halucinarium ArtOn aims to inspire innovation for novel
-                            products and services, as well as using emotional intelligence towards a new way of
-                            communication. ArtOn creates a bridge between consumer and brand.
-                        </Text>
+                            <Text style={styles.textBody}>
+                                Via its curation of artists and works, Halucinarium ArtOn aims to inspire innovation for
+                                novel
+                                products and services, as well as using emotional intelligence towards a new way of
+                                communication. ArtOn creates a bridge between consumer and brand.
+
+                            </Text>
+                        </View>
+
                     </View>
-
-                </View>
                 </ScrollView>
             </View>
         );
@@ -76,7 +82,9 @@ const BODY_FONT_SIZE = normalize(16);
 const styles = StyleSheet.create({
     root: {
         backgroundColor: '#212121',
-        flex: 1,
+        height: '100%',
+    },
+    backContainer: {
         alignItems: 'center',
     },
     buttonStyle: {
@@ -98,23 +106,21 @@ const styles = StyleSheet.create({
         marginTop: 25,
         justifyContent: 'center',
     },
-    textFull: {
+    scroll: {
         flex: 1,
+    },
+    textFull: {
+        // flex: 1,
+        height: '100%',
         alignItems: 'center',
     },
     textContainer: {
         flex: 1,
         width: '90%',
-        textAlign: 'center'
-    },
-    title: {
-        paddingTop: normalize(20),
-        fontFamily: 'TyponilBold',
-        fontSize: TITLE_FONT_SIZE,
-        color: 'white',
+        textAlign: 'center',
     },
     textTitle: {
-        paddingTop: normalize(20),
+        paddingTop: normalize(15),
         fontFamily: 'TyponilBold',
         fontSize: TITLE_FONT_SIZE,
         color: 'white',
