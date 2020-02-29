@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffff',
     },
     buttonText: {
-        fontFamily: 'TyponilBold',
+        fontFamily: 'Typonil-Bold',
         fontSize: normalize(18),
         color: '#212121',
     },
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     },
     collaboratorsTitle: {
         marginTop: 20,
-        fontFamily: 'TyponilBold',
+        fontFamily: 'Typonil-Bold',
         fontSize: TITLE_FONT_SIZE,
         color: 'white',
     },

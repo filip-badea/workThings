@@ -11,9 +11,9 @@ class Artist extends React.Component {
         const {navigate} = this.props.navigation;
         return (
             <View style={styles.root}>
-                <View style={styles.artistContainer}>
+                <View style={styles.backContainer}>
                     <Button
-                        containerStyle={styles.backContainer}
+                        containerStyle={styles.buttonContainer}
                         buttonStyle={styles.buttonStyle}
                         title="SAINT MACHINE"
                         titleStyle={styles.buttonText}
@@ -25,6 +25,9 @@ class Artist extends React.Component {
                         iconLeft
                         onPress={() => navigate('MainMenu')}
                     />
+                </View>
+                <View style={styles.artistContainer}>
+
                     <View style={styles.artistPhoto}>
                         <Image
                             style={{
@@ -68,8 +71,21 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     backContainer: {
+        alignItems: 'center',
+    },
+    buttonStyle: {
+        backgroundColor: '#ffff',
+        height: 50,
+    },
+    buttonContainer: {
         width: '90%',
-        marginTop: normalize(20),
+        marginTop: normalize(30),
+        backgroundColor: '#ffff',
+    },
+    buttonText: {
+        fontFamily: 'Typonil-Bold',
+        fontSize: normalize(18),
+        color: '#212121',
     },
     artistContainer: {
         flex: 1,
@@ -90,16 +106,5 @@ const styles = StyleSheet.create({
         fontSize: BODY_FONT_SIZE,
         color: 'white',
         textAlign: 'center',
-    },
-
-    buttonStyle: {
-        backgroundColor: '#ffff',
-        height: 50,
-    },
-
-    buttonText: {
-        fontFamily: 'TyponilBold',
-        fontSize: TITLE_FONT_SIZE,
-        color: '#212121',
     },
 });

@@ -15,6 +15,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  NSArray *familyNames = [[NSArray alloc] initWithArray:[UIFont familyNames]];
+    
+  for (NSString *family in familyNames) {
+    NSLog(@"Family name: %@", family);
+
+    NSArray *fontNames = [UIFont fontNamesForFamilyName: family];
+    for (NSString *font in fontNames) {
+      NSLog(@"    Font name: %@", font);
+    }
+  }
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"halucinarium"
@@ -32,6 +42,7 @@
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
+  
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 #else

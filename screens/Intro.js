@@ -17,7 +17,7 @@ export function normalize(size) {
     return Math.round(newSize);
 }
 
-const TITLE_FONT_SIZE = normalize(20);
+const TITLE_FONT_SIZE = normalize(19);
 const BODY_FONT_SIZE = normalize(18);
 
 
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     },
     textPresents: {
         marginTop: 10,
-        fontFamily: 'AnonymousPro',
+        // fontFamily: 'AnonymousPro',
         fontSize: BODY_FONT_SIZE,
         color: 'white',
         textAlign: 'center',
@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     },
 
     buttonText: {
-        fontFamily: 'TyponilBold',
+        fontFamily: 'Typonil-Bold',
         fontSize: TITLE_FONT_SIZE,
         color: 'black',
         textAlign: 'center',

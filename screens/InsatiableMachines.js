@@ -1,10 +1,9 @@
 import React from 'react';
-import {StyleSheet, View, Text, ScrollView} from 'react-native';
-import {Icon, Button} from 'react-native-elements';
+import {ScrollView, StyleSheet, Text, View} from 'react-native';
+import {Button, Icon} from 'react-native-elements';
 import {normalize} from './Intro';
 
 class InsatiableMachines extends React.Component {
-
     render() {
         const {navigate} = this.props.navigation;
         return (
@@ -17,9 +16,7 @@ class InsatiableMachines extends React.Component {
                         titleStyle={styles.buttonText}
                         raised
                         iconContainerStyle={styles.iconStyle}
-                        icon={
-                            <Icon name="keyboard-arrow-left" size={30} color="#212121"/>
-                        }
+                        icon={<Icon name="keyboard-arrow-left" size={30} color="#212121"/>}
                         iconLeft
                         onPress={() => navigate('MainMenu')}
                     />
@@ -28,24 +25,26 @@ class InsatiableMachines extends React.Component {
                     <View style={styles.textFull}>
                         <View style={styles.textContainer}>
                             <Text style={styles.textBody}>
-                                Insatiable Machines is a solo show of artist Saint Machine curated by Carmen Casiuc.
-                                Part of the ”Reedeming Time” Halucinarium Program, it showcases an artistic
-                                investigation into how humans, living organisms and machines control and communicate
-                                with each other through a complex dynamics of grace and greed.
-                                Working with programmers, physicists, engineers, 3D animators and sound artists, Saint
-                                Machine develops sophisticated systems to realize ambitious productions in which the
-                                experience of the public becomes an integral part of the artwork.
-                                Revealing a renewed sensibility towards new technologies and a critical view of their
-                                ubiquitous adoption in today’s society, Insatiable machines by Saint Machine generates
-                                an all-encompassing sensing environment of mutually programming harmony that reflects
-                                upon the modeling of collective affects produced within the holy tension of love and
-                                power between human, machines and nature.
+                                Insatiable Machines is a solo show of artist Saint Machine
+                                curated by Carmen Casiuc. Part of the ”Reedeming Time”
+                                Halucinarium Program, it showcases an artistic investigation
+                                into how humans, living organisms and machines control and
+                                communicate with each other through a complex dynamics of grace
+                                and greed. Working with programmers, physicists, engineers, 3D
+                                animators and sound artists, Saint Machine develops
+                                sophisticated systems to realize ambitious productions in which
+                                the experience of the public becomes an integral part of the
+                                artwork. Revealing a renewed sensibility towards new
+                                technologies and a critical view of their ubiquitous adoption in
+                                today’s society, Insatiable machines by Saint Machine generates
+                                an all-encompassing sensing environment of mutually programming
+                                harmony that reflects upon the modeling of collective affects
+                                produced within the holy tension of love and power between
+                                human, machines and nature.
                             </Text>
-
                         </View>
                     </View>
                     {/*<View style={styles.root}>*/}
-
                 </ScrollView>
             </View>
         );
@@ -76,7 +75,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffff',
     },
     buttonText: {
-        fontFamily: 'TyponilBold',
+        fontFamily: 'Typonil-Bold',
         fontSize: normalize(18),
         color: '#212121',
     },
@@ -100,7 +99,7 @@ const styles = StyleSheet.create({
     },
     collaboratorsTitle: {
         marginTop: 20,
-        fontFamily: 'TyponilBold',
+        fontFamily: 'Typonil-Bold',
         fontSize: TITLE_FONT_SIZE,
         color: 'white',
     },

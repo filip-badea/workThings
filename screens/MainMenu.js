@@ -1,10 +1,9 @@
 import React from 'react';
 
 import {StyleSheet, View} from 'react-native';
-import {Button} from 'react-native-elements'
+import {Button} from 'react-native-elements';
 
-import {normalize} from "./Intro";
-
+import {normalize} from './Intro';
 
 
 class Intro extends React.Component {
@@ -100,7 +99,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffff',
     },
     buttonText: {
-        fontFamily: 'TyponilBold',
+        fontFamily: 'Typonil-Bold',
         fontSize: normalize(20),
         color: '#212121',
     },
